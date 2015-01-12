@@ -5,6 +5,7 @@
   var connect = require('connect');
   var serveStatic = require('serve-static');
   var serveIndex = require('serve-index');
+  var utils = require('./serv-utils');
 
   var http = require('http');
 
@@ -20,8 +21,6 @@
         });
 
   //////
-
-  var utils = require('./pr_utils');
 
   var WebSocketServer = require('websocket').server;
 
