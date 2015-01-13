@@ -21,6 +21,7 @@
         });
 
   var websocketLib = require('./lib-websocket');
+  //var websocketLib = require('./lib-ws');
 
   websocketLib.connectWebsocketServer(server);
 
