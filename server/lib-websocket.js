@@ -4,20 +4,19 @@
 
   exports.connectWebsocketServer = function(server) {
 
-    var WebSocketServer = require('websocket').server;
+    var websocketLibServer = require('websocket').server;
     var utils = require('./serv-utils');
 
     var connections = [];
 
-    var wsServer = new WebSocketServer({
+    var websocketServer = new websocketLibServer({
         httpServer: server,
         autoAcceptConnections: false
     });
 
-    wsServer.on('request', function(request) {
+    websocketServer.on('request', function(request) {
 
         if (!utils.originIsAllowed(request.origin)) {
-          // Make sure we only accept requests from an allowed origin
           request.reject();
           console.log((new Date()) + ' Connection from origin ' + request.origin + ' rejected.');
           return;

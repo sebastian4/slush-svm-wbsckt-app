@@ -20,8 +20,8 @@
             console.log('Started connect web server on http://localhost:9000.');
         });
 
-  var websockerServer = require('./lib-websocket');
+  var websocketLib = require('./lib-websocket');
 
-  websockerServer.connectWebsocketServer(server);
+  websocketLib.connectWebsocketServer(server);
 
 })();
