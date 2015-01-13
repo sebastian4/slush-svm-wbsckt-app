@@ -1,5 +1,7 @@
 (function(){
 
-  'use strict';
+	'use strict';
+
+	console.log("sample");
 
 })();
