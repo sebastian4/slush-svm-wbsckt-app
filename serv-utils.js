@@ -7,4 +7,9 @@ exports.takeout = function(array,key) {
 	}
 }
 
+exports.originIsAllowed = function(origin) {
+    // put logic here to detect whether the specified origin is allowed.
+    return true;
+}
+
 })();
