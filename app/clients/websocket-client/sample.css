@@ -1,0 +1,18 @@
+ul {
+    list-style-type: none;
+}
+
+#websocket-container {
+    background: #eee;
+    width: 50%;
+
+
+}
+
+#websocket-container .ws-title {
+    text-align: center;
+}
+
+#websocket-container #text {
+    width: 60px;
+}

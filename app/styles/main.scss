@@ -37,23 +37,6 @@ body {
     padding-bottom: 16px;
 }
 
-ul {
-    list-style-type: none;
-}
-
-#websocket-container {
-    background: #eee;
-    width: 50%;
-
-    .ws-title {
-        text-align: center;
-    }
-
-    #text {
-        width: 60px;
-    }
-}
-
 /* Custom page footer */
 .footer {
     padding-top: 16px;
