@@ -1,6 +1,6 @@
 "use strict";
 
-console.log("js-h5-wsckt");
+console.log("websocket client");
 
 // Initialize everything when the window finishes loading
 window.addEventListener("load", function (event) {
@@ -64,6 +64,8 @@ window.addEventListener("load", function (event) {
 });
 
 var add_new_message = function (val) {
+    console.log("new message: "+val);
+
     var messages = document.getElementById('messages');
 
     var li = document.createElement("li");
@@ -72,7 +74,7 @@ var add_new_message = function (val) {
     messages.insertBefore(li, messages.getElementsByTagName("li")[0])
 
     var last_message = messages.lastChild;
-    last_message.parentNode.removeChild(last_message);
-    var last_message = document.getElementById('messages').lastChild;
-    last_message.parentNode.removeChild(last_message);
+    if (last_message.parentNode.childNodes.length > 6) {
+        messages.removeChild(last_message);
+    }
 };
